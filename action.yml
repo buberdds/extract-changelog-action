@@ -1,0 +1,12 @@
+name: 'Extract Changelog'
+description: 'Extract changelog from a git repository for a specific version'
+inputs:
+  version:
+    description: 'Version to extract changelog for'
+    required: true
+outputs:
+  content:
+    description: 'Changelog content extracted for the given version'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
